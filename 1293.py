@@ -1,0 +1,5 @@
+inp_str = input()
+n, a, b = inp_str.split(' ')
+surface = int(a)*int(b)
+nanosulf = int(n)*(2*surface)
+print(nanosulf)
