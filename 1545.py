@@ -1,3 +1,5 @@
+# http://acm.timus.ru/problem.aspx?space=1&num=1545&locale=en
+
 import sys
 
 char_count = int(input())
