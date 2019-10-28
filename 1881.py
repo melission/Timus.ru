@@ -1,3 +1,5 @@
+# http://acm.timus.ru/problem.aspx?space=1&num=1881&locale=en
+
 import sys
 
 listline, chars, woldsnum = input().split()
