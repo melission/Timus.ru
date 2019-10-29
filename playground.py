@@ -13,3 +13,5 @@
 # print(third_func.__name__)
 # print(third_func)
 
+d = {'key1': 12, 'key2': 100}
+print(d['key1'])
