@@ -1,3 +1,5 @@
+# http://acm.timus.ru/problem.aspx?space=1&num=1636&locale=en
+
 team_ZZZ, team_QXX = input().strip().split()
 
 bedug = input().strip().split()
