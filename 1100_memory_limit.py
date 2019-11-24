@@ -14,7 +14,7 @@ for i in range(itemcount):
     #     num = int(srt_num)
     #     team.append(num)
     toSortList.append(str_lst)
-print(sys.getsizeof(toSortList))
+# print(sys.getsizeof(toSortList))
 
 
 # print(toSortList)
