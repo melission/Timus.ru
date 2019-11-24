@@ -1,3 +1,4 @@
+# https://acm.timus.ru/problem.aspx?space=1&num=1100
 # ru: https://habr.com/ru/post/455722/
 # eng: https://habr.com/ru/post/458518/
 import sys
