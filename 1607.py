@@ -1,11 +1,28 @@
 
-import sys
+customerPrice, customerProposal, driverPrice, driverProposal = input().strip().split()
+customerPrice, customerProposal = int(customerPrice), int(customerProposal)
+driverPrice, driverProposal = int(driverPrice), int(driverProposal)
 
-imp = []
-for line in sys.stdin:
-    for item in line.split():
-        imp.append(int(item.strip()))
-agreement = 0
-while True:
-    agreement = agreement + (imp[0] + imp[1])
+finishPrice = 0
+changed = True
+acc = True
+if customerPrice > driverPrice:
+    finishPrice = customerPrice
+    acc = False
+while acc:
+    if customerPrice + customerProposal < driverPrice:
+        customerPrice = customerPrice + customerProposal
+        finishPrice = customerPrice
+            # print(customerPrice)
 
+    if customerPrice + customerProposal > driverPrice:
+        finishPrice = driverPrice
+    if customerPrice + customerProposal < driverPrice:
+        driverPrice = driverPrice - driverProposal
+        finishPrice = driverPrice
+            # print(driverPrice)
+    else:
+        acc = False
+
+
+print(finishPrice)

@@ -1,5 +1,6 @@
 # https://acm.timus.ru/problem.aspx?space=1&num=1935
 
+
 def bubble_sort(numList):
     changed = True
     while changed:
