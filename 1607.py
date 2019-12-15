@@ -13,14 +13,13 @@ while acc:
     if customerPrice + customerProposal < driverPrice:
         customerPrice = customerPrice + customerProposal
         finishPrice = customerPrice
-            # print(customerPrice)
-
+        # print(customerPrice)
     if customerPrice + customerProposal > driverPrice:
         finishPrice = driverPrice
     if customerPrice + customerProposal < driverPrice:
         driverPrice = driverPrice - driverProposal
         finishPrice = driverPrice
-            # print(driverPrice)
+        # print(driverPrice)
     else:
         acc = False
 
