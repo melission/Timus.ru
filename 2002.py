@@ -4,9 +4,9 @@ registredUsers = {}
 def register(username, password):
     if username not in registredUsers.keys():
         registredUsers[username] = [password, {'status': False}]
-        return print('success: new user added')
+        return 'success: new user added'
     else:
-        return print('fail: user already exists')
+        return 'fail: user already exists'
 
 
 def login(username, password):
@@ -36,7 +36,7 @@ for lines in range(inputLines):
     info = input().strip().split()
     if info[0] == 'register':
         # print(info)
-        register(username=info[1], password=info[2])
+        print(register(username=info[1], password=info[2]))
     if info[0] == 'login':
         # print(info)
         login(username=info[1], password=info[2])
